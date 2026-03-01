@@ -1,0 +1,1865 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Changos Garden Studios | Producción Musical en Toledo</title>
+
+  <!-- ╔══════════════════════════════════════════════╗
+       ║              SEO META TAGS                   ║
+       ╚══════════════════════════════════════════════╝ -->
+  <meta name="description" content="Estudio de producción musical y audiovisual en Toledo. Masterización, grabación y producción. Reserva tu sesión en Changos Garden Studios.">
+  <meta name="keywords" content="estudio musical Toledo, producción musical, masterización, grabación, Changos Garden, audiovisual Toledo">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Changos Garden Studios">
+  <meta name="geo.placename" content="Toledo, España">
+  <meta name="geo.region" content="ES-CM">
+  <link rel="canonical" href="https://changosgardenstudios.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Changos Garden Studios | Producción Musical en Toledo">
+  <meta property="og:description" content="Tu proyecto. Tu sonido. Producción musical, masterización y audiovisual en Toledo.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cg: {
+              green:    '#22c55e',
+              'green-dark':  '#16a34a',
+              'green-light': '#86efac',
+              'green-bg':    '#f0fdf4',
+              purple:   '#a855f7',
+              'purple-dark': '#7e22ce',
+              'purple-light':'#d8b4fe',
+              'purple-bg':   '#faf5ff',
+            }
+          },
+          fontFamily: {
+            sans: ['"Space Grotesk"', 'system-ui', 'sans-serif'],
+          },
+          animation: {
+            'float-1': 'floatAnim 4s ease-in-out infinite',
+            'float-2': 'floatAnim 5s ease-in-out infinite 1s',
+            'float-3': 'floatAnim 3.5s ease-in-out infinite 0.5s',
+            'float-4': 'floatAnim 6s ease-in-out infinite 1.5s',
+            'marquee':  'marqueeScroll 28s linear infinite',
+            'marquee2': 'marqueeScroll2 28s linear infinite',
+            'wave': 'audioWave 1.3s ease-in-out infinite',
+            'blink': 'blinkAnim 3s ease-in-out infinite',
+          },
+          keyframes: {
+            floatAnim: {
+              '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+              '33%':       { transform: 'translateY(-16px) rotate(2deg)' },
+              '66%':       { transform: 'translateY(-8px) rotate(-1.5deg)' },
+            },
+            marqueeScroll: {
+              '0%':   { transform: 'translateX(0%)' },
+              '100%': { transform: 'translateX(-50%)' },
+            },
+            marqueeScroll2: {
+              '0%':   { transform: 'translateX(-50%)' },
+              '100%': { transform: 'translateX(0%)' },
+            },
+            audioWave: {
+              '0%, 100%': { transform: 'scaleY(0.35)' },
+              '50%':       { transform: 'scaleY(1.7)' },
+            },
+            blinkAnim: {
+              '0%, 90%, 100%': { transform: 'scaleY(1)' },
+              '95%': { transform: 'scaleY(0.05)' },
+            },
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* ============================================================
+       BASE
+    ============================================================ */
+    *, *::before, *::after { box-sizing: border-box; }
+    body { font-family: 'Space Grotesk', sans-serif; }
+    html { scroll-behavior: smooth; }
+
+    /* ============================================================
+       BRAND GRADIENT UTILITIES
+    ============================================================ */
+    .gradient-brand       { background: linear-gradient(135deg, #22c55e 0%, #a855f7 100%); }
+    .gradient-brand-rev   { background: linear-gradient(135deg, #a855f7 0%, #22c55e 100%); }
+    .gradient-text {
+      background: linear-gradient(135deg, #22c55e, #a855f7);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .gradient-text-rev {
+      background: linear-gradient(135deg, #a855f7, #22c55e);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* ============================================================
+       BUTTONS
+    ============================================================ */
+    .btn-brand {
+      background: linear-gradient(135deg, #22c55e, #a855f7);
+      color: #fff; font-weight: 700; padding: 0.8rem 2rem;
+      border-radius: 999px; border: none; cursor: pointer;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      text-decoration: none; font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem;
+    }
+    .btn-brand:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(168,85,247,0.4); }
+
+    .btn-outline {
+      color: #22c55e; border: 2.5px solid #22c55e;
+      font-weight: 700; padding: 0.75rem 2rem;
+      border-radius: 999px; background: transparent; cursor: pointer;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      transition: all 0.25s ease;
+      text-decoration: none; font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem;
+    }
+    .btn-outline:hover { background: #22c55e; color: #fff; transform: translateY(-3px); }
+
+    .btn-outline-purple {
+      color: #a855f7; border: 2.5px solid #a855f7;
+      font-weight: 700; padding: 0.75rem 2rem;
+      border-radius: 999px; background: transparent; cursor: pointer;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      transition: all 0.25s ease;
+      text-decoration: none; font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem;
+    }
+    .btn-outline-purple:hover { background: #a855f7; color: #fff; transform: translateY(-3px); }
+
+    /* ============================================================
+       AUDIO WAVE BARS
+    ============================================================ */
+    .audio-bar {
+      width: 5px; border-radius: 3px; transform-origin: bottom;
+      background: linear-gradient(to top, #22c55e, #a855f7);
+      animation: audioWave 1.3s ease-in-out infinite;
+    }
+    .audio-bar:nth-child(1) { animation-delay: 0s;    height: 20px; }
+    .audio-bar:nth-child(2) { animation-delay: 0.15s; height: 34px; }
+    .audio-bar:nth-child(3) { animation-delay: 0.3s;  height: 24px; }
+    .audio-bar:nth-child(4) { animation-delay: 0.45s; height: 38px; }
+    .audio-bar:nth-child(5) { animation-delay: 0.6s;  height: 18px; }
+    .audio-bar:nth-child(6) { animation-delay: 0.75s; height: 30px; }
+    .audio-bar:nth-child(7) { animation-delay: 0.9s;  height: 38px; }
+    @keyframes audioWave {
+      0%, 100% { transform: scaleY(0.35); }
+      50%       { transform: scaleY(1.7);  }
+    }
+
+    /* ============================================================
+       NAVIGATION
+    ============================================================ */
+    #navbar { transition: background 0.35s ease, box-shadow 0.35s ease; }
+    #navbar.scrolled {
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 2px 24px rgba(0,0,0,0.07);
+    }
+    /* Navbar scrolled → restaurar texto oscuro */
+    #navbar.scrolled .nav-link { color: #374151; }
+    #navbar.scrolled .text-gray-900 { color: rgb(17,24,39) !important; }
+    #navbar.scrolled .text-gray-500 { color: rgb(107,114,128) !important; }
+    /* Navbar transparente → logo y social en blanco */
+    #navbar:not(.scrolled) .text-gray-900 { color: white !important; }
+    #navbar:not(.scrolled) .text-gray-500 { color: rgba(255,255,255,0.7) !important; }
+    .nav-link {
+      position: relative; font-weight: 500; color: rgba(255,255,255,0.88);
+      transition: color 0.2s ease; text-decoration: none; font-size: 0.95rem;
+    }
+    .nav-link::after {
+      content: ''; position: absolute; bottom: -4px; left: 0;
+      width: 0; height: 2px; border-radius: 2px;
+      background: linear-gradient(135deg, #22c55e, #a855f7);
+      transition: width 0.25s ease;
+    }
+    .nav-link:hover { color: #22c55e; }
+    .nav-link:hover::after { width: 100%; }
+
+    /* ============================================================
+       MOBILE MENU
+    ============================================================ */
+    #mobile-menu {
+      transform: translateX(100%); transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
+    }
+    #mobile-menu.open { transform: translateX(0); }
+
+    /* ============================================================
+       HERO
+    ============================================================ */
+    .hero-bg-fallback {
+      background-color: #0d0b1e;
+      background-image: url('assets/espacio.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    /* ============================================================
+       SVG ASSET SLOTS
+       ─────────────────────────────────────────────────────────────
+       These are the three main SVG injection points.
+       The SVGManager in main.js handles populating them.
+       See js/main.js → SVGManager for the API.
+    ============================================================ */
+
+    /* SLOT 1: Background — #svg-bg-slot
+       Receives: full-bleed background SVG (patterns, abstract art)
+       Size: absolute, covers the entire hero section           */
+    #svg-bg-slot { position: absolute; inset: 0; z-index: 0; overflow: hidden; }
+
+    /* SLOT 2: Character — #svg-character-slot
+       Receives: animated mascot/character SVG
+       The slot wrapper already applies the float animation.    */
+    #svg-character-slot { display: flex; align-items: center; justify-content: center; }
+    #svg-character-slot svg,
+    #svg-character-slot img { width: 100%; height: 100%; }
+
+    /* SLOT 2 — Mono bailarín (sprite sheet 6×6 = 36 frames, 512×512 c/u) */
+    /* Capa 1: ancla la posición en el hero (no tiene transform propio) */
+    #mono-pos {
+      position: absolute;
+      right: -5%;
+      top: 0;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      width: min(90vh, 900px);
+      z-index: 2;
+      pointer-events: none;
+    }
+    /* Capa 2: animación de flotado (solo transform, sin posicionado) */
+    #mono-float {
+      animation: floatAnim 4s ease-in-out infinite;
+      width: 100%;
+    }
+    /* Capa 3: sprite del mono */
+    #mono-dancer {
+      background-image: url('assets/sprite-256px-36.png');
+      background-size: 600% 600%;
+      background-position: 0% 0%;
+      background-repeat: no-repeat;
+      aspect-ratio: 1 / 1;
+      width: 100%;
+      display: block;
+      mix-blend-mode: screen;
+    }
+
+    /* SLOT 3: Icons — [data-svg-icon]
+       Usage: <span data-svg-icon="icon-name"></span>
+       SVGManager.renderIcons() replaces fallback emoji with
+       <svg><use href="#[icon-name]"></use></svg>             */
+    [data-svg-icon] { display: inline-flex; align-items: center; justify-content: center; }
+
+    /* ============================================================
+       CARDS & EFFECTS
+    ============================================================ */
+    .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card-hover:hover { transform: translateY(-7px); }
+
+    .service-card {
+      border-top: 4px solid transparent;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+    .service-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(168,85,247,0.15); }
+    .service-card.green { border-top-color: #22c55e; }
+    .service-card.purple { border-top-color: #a855f7; }
+    .service-card.mix { border-top: 4px solid; border-image: linear-gradient(135deg, #22c55e, #a855f7) 1; }
+
+    .portfolio-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .portfolio-card:hover { transform: translateY(-5px); box-shadow: 0 16px 36px rgba(0,0,0,0.12); }
+
+    /* ============================================================
+       SCROLL REVEAL
+    ============================================================ */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-left  { opacity: 0; transform: translateX(-28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal-right { opacity: 0; transform: translateX(28px);  transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal-left.visible, .reveal-right.visible { opacity: 1; transform: translateX(0); }
+
+    /* ============================================================
+       BADGES
+    ============================================================ */
+    .badge-green  { background:#dcfce7; color:#16a34a; padding:0.25rem 0.8rem; border-radius:999px; font-size:0.8rem; font-weight:700; }
+    .badge-purple { background:#f3e8ff; color:#7e22ce; padding:0.25rem 0.8rem; border-radius:999px; font-size:0.8rem; font-weight:700; }
+
+    /* ============================================================
+       TABS (Portfolio & Shop)
+    ============================================================ */
+    .tab-btn {
+      padding: 0.5rem 1.4rem; border-radius: 999px; font-weight: 600;
+      font-size: 0.9rem; cursor: pointer; border: 2px solid transparent;
+      transition: all 0.2s ease; background: #f3f4f6; color: #6b7280;
+    }
+    .tab-btn:hover { border-color: #a855f7; color: #a855f7; background: #faf5ff; }
+    .tab-btn.active { background: linear-gradient(135deg, #22c55e, #a855f7); color: #fff; border-color: transparent; }
+
+    /* ============================================================
+       FORMS
+    ============================================================ */
+    .form-input {
+      width: 100%; padding: 0.85rem 1.1rem;
+      border: 2px solid #e5e7eb; border-radius: 0.85rem;
+      font-family: 'Space Grotesk', sans-serif; font-size: 0.95rem;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      background: white; outline: none; color: #111827;
+    }
+    .form-input:focus { border-color: #a855f7; box-shadow: 0 0 0 3px rgba(168,85,247,0.15); }
+    .form-label { display: block; font-weight: 600; font-size: 0.9rem; color: #374151; margin-bottom: 0.4rem; }
+
+    /* ============================================================
+       BOOKING MODAL
+    ============================================================ */
+    #booking-modal { transition: opacity 0.3s ease; }
+    #booking-modal .modal-inner { transition: transform 0.35s cubic-bezier(0.34,1.56,0.64,1); }
+    #booking-modal.hidden .modal-inner { transform: scale(0.9) translateY(20px); }
+
+    .step-indicator {
+      width: 2rem; height: 2rem; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.8rem; font-weight: 700;
+    }
+    .step-indicator.done    { background: linear-gradient(135deg, #22c55e, #a855f7); color: #fff; }
+    .step-indicator.current { background: #a855f7; color: #fff; }
+    .step-indicator.pending { background: #e5e7eb; color: #9ca3af; }
+
+    .service-radio-card {
+      border: 2px solid #e5e7eb; border-radius: 1rem;
+      padding: 1.2rem; cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .service-radio-card:hover { border-color: #a855f7; background: #faf5ff; }
+    .service-radio-card.selected { border-color: #a855f7; background: #faf5ff;
+      box-shadow: 0 0 0 2px rgba(168,85,247,0.2); }
+
+    /* ============================================================
+       SCROLLBAR
+    ============================================================ */
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: #f1f5f9; }
+    ::-webkit-scrollbar-thumb { background: linear-gradient(#22c55e, #a855f7); border-radius: 10px; }
+
+    /* ============================================================
+       FLOAT ANIMATIONS (for hero elements)
+    ============================================================ */
+    @keyframes floatAnim {
+      0%, 100% { transform: translateY(0px)  rotate(0deg);   }
+      33%       { transform: translateY(-16px) rotate(2deg);   }
+      66%       { transform: translateY(-8px)  rotate(-1.5deg); }
+    }
+    .float-1 { animation: floatAnim 4s   ease-in-out infinite; }
+    .float-2 { animation: floatAnim 5s   ease-in-out infinite 1s; }
+    .float-3 { animation: floatAnim 3.5s ease-in-out infinite 0.5s; }
+    .float-4 { animation: floatAnim 6s   ease-in-out infinite 1.5s; }
+
+    /* ============================================================
+       MISC
+    ============================================================ */
+    .section-divider {
+      width: 60px; height: 4px; border-radius: 2px;
+      background: linear-gradient(135deg, #22c55e, #a855f7);
+    }
+    .social-icon { transition: transform 0.2s ease; display: inline-flex; align-items: center; }
+    .social-icon:hover { transform: translateY(-3px); }
+
+    @media (max-width: 640px) {
+      .btn-brand, .btn-outline, .btn-outline-purple { padding: 0.7rem 1.5rem; font-size: 0.9rem; }
+    }
+
+    /* ============================================================
+       FONDOS DE SECCIÓN
+    ============================================================ */
+
+    /* Overlay sutil para el hero */
+    #inicio::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.38);
+      z-index: 1;
+      pointer-events: none;
+    }
+    /* Texto hero → blanco */
+    #inicio h1,
+    #inicio > .relative > .grid p,
+    #inicio > .relative > .grid span.text-gray-400 { color: rgba(255,255,255,0.93) !important; }
+    #inicio strong { color: white !important; }
+
+    /* 2–6 · Secciones de contenido */
+    #nosotros, #servicios, #portfolio, #crew, #contacto {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    #nosotros  { background-image: url('assets/copas.jpg');   }
+    #servicios { background-image: url('assets/troncos.jpg'); }
+    #portfolio { background-image: url('assets/lianas.jpg');  }
+    #crew      { background-image: url('assets/huesos.jpg');  }
+    #contacto  { background-image: url('assets/estudio.jpg'); }
+
+    /* Overlay oscuro sobre las imágenes */
+    #nosotros::before, #servicios::before, #portfolio::before,
+    #crew::before, #contacto::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.58);
+      z-index: 0;
+      pointer-events: none;
+    }
+    /* Contenido sobre el overlay */
+    #nosotros > div, #servicios > div, #portfolio > div,
+    #crew > div, #contacto > div { position: relative; z-index: 1; }
+
+    /* Texto claro en todas las secciones con fondo oscuro */
+    #inicio .text-gray-900, #inicio .text-gray-800,
+    #inicio .text-gray-700, #inicio .text-gray-600,
+    #inicio .text-gray-500, #inicio .text-gray-400,
+    #nosotros .text-gray-900, #nosotros .text-gray-800,
+    #nosotros .text-gray-700, #nosotros .text-gray-600,
+    #nosotros .text-gray-500, #nosotros .text-gray-400,
+    #servicios .text-gray-900, #servicios .text-gray-800,
+    #servicios .text-gray-700, #servicios .text-gray-600,
+    #servicios .text-gray-500, #servicios .text-gray-400,
+    #portfolio .text-gray-900, #portfolio .text-gray-800,
+    #portfolio .text-gray-700, #portfolio .text-gray-600,
+    #portfolio .text-gray-500, #portfolio .text-gray-400,
+    #crew .text-gray-900, #crew .text-gray-800,
+    #crew .text-gray-700, #crew .text-gray-600,
+    #crew .text-gray-500, #crew .text-gray-400,
+    #contacto .text-gray-900, #contacto .text-gray-800,
+    #contacto .text-gray-700, #contacto .text-gray-600,
+    #contacto .text-gray-500, #contacto .text-gray-400 { color: rgba(255,255,255,0.88) !important; }
+
+    /* Headings directos → blanco puro */
+    #inicio h1, #inicio h2, #inicio h3, #inicio h4,
+    #nosotros h2, #nosotros h3, #nosotros h4,
+    #servicios h2, #servicios h3, #servicios h4,
+    #portfolio h2, #portfolio h3, #portfolio h4,
+    #crew h2, #crew h3, #crew h4,
+    #contacto h2, #contacto h3, #contacto h4 { color: white !important; }
+
+    /* Reproductor hero — mantener texto oscuro (tiene fondo blanco) */
+    #hero-player .text-gray-900 { color: rgb(17,24,39) !important; }
+    #hero-player .text-gray-400 { color: rgb(156,163,175) !important; }
+    #hero-player h2, #hero-player h3, #hero-player p { color: inherit; }
+
+    /* Labels del formulario de contacto → blanco */
+    #contacto .form-label { color: rgba(255,255,255,0.9) !important; }
+    #contacto .text-gray-400 { color: rgba(255,255,255,0.65) !important; }
+
+    /* Restaurar texto oscuro dentro de tarjetas bg-white */
+    #nosotros .bg-white .text-gray-900, #nosotros .bg-white h2,
+    #nosotros .bg-white h3, #nosotros .bg-white h4 { color: rgb(17,24,39) !important; }
+    #nosotros .bg-white .text-gray-800 { color: rgb(31,41,55) !important; }
+    #nosotros .bg-white .text-gray-600 { color: rgb(75,85,99) !important; }
+    #nosotros .bg-white .text-gray-500 { color: rgb(107,114,128) !important; }
+
+    #servicios .bg-white .text-gray-900, #servicios .bg-white h3,
+    #servicios .bg-white h4 { color: rgb(17,24,39) !important; }
+    #servicios .bg-white .text-gray-600 { color: rgb(75,85,99) !important; }
+    #servicios .bg-white .text-gray-500 { color: rgb(107,114,128) !important; }
+
+    #portfolio .bg-white .text-gray-900, #portfolio .bg-white h3,
+    #portfolio .bg-white h4 { color: rgb(17,24,39) !important; }
+    #portfolio .bg-white .text-gray-600 { color: rgb(75,85,99) !important; }
+    #portfolio .bg-white .text-gray-500 { color: rgb(107,114,128) !important; }
+
+    #crew .bg-white .text-gray-900, #crew .bg-white h3,
+    #crew .bg-white h4 { color: rgb(17,24,39) !important; }
+    #crew .bg-white .text-gray-600 { color: rgb(75,85,99) !important; }
+    #crew .bg-white .text-gray-500 { color: rgb(107,114,128) !important; }
+
+    #contacto .bg-white .text-gray-900, #contacto .bg-white h3,
+    #contacto .bg-white h4 { color: rgb(17,24,39) !important; }
+    #contacto .bg-white .text-gray-600 { color: rgb(75,85,99) !important; }
+    #contacto .bg-white .text-gray-500 { color: rgb(107,114,128) !important; }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900 overflow-x-hidden">
+
+  <!-- ╔══════════════════════════════════════════════════════════════════╗
+       ║  HIDDEN SVG SPRITE CONTAINER                                    ║
+       ║  SVGManager loads assets/svg/sprite.svg and injects it here.   ║
+       ║  Icons are then referenced with <use href="#icon-name">         ║
+       ╚══════════════════════════════════════════════════════════════════╝ -->
+  <div id="svg-sprite-container" aria-hidden="true" style="display:none;position:absolute;"></div>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       NAVIGATION
+  ════════════════════════════════════════════════════════════ -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-40 px-6 lg:px-10 py-4">
+    <div class="max-w-6xl mx-auto flex items-center justify-between gap-6">
+
+      <!-- Logo -->
+      <a href="#inicio" class="flex items-center gap-2 group">
+        <!-- SVG logo slot: replace the text below with your logo SVG -->
+        <div id="nav-logo-slot" class="w-9 h-9 rounded-xl gradient-brand flex items-center justify-center">
+          <span class="text-white font-black text-sm leading-none">CG</span>
+        </div>
+        <span class="font-extrabold text-gray-900 text-lg leading-tight">
+          Changos<span class="gradient-text">Garden</span>
+        </span>
+      </a>
+
+      <!-- Desktop links -->
+      <ul class="hidden lg:flex items-center gap-7">
+        <li><a href="#inicio"    class="nav-link">Inicio</a></li>
+        <li><a href="#nosotros"  class="nav-link">Nosotros</a></li>
+        <li><a href="#servicios" class="nav-link">Servicios</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#crew"      class="nav-link">Crew</a></li>
+        <li><a href="#tienda"    class="nav-link">Tienda</a></li>
+        <li><a href="#contacto"  class="nav-link">Contacto</a></li>
+      </ul>
+
+      <!-- Right: Social + CTA -->
+      <div class="hidden lg:flex items-center gap-4">
+        <!-- Social icons (SVG icons will replace these via SVGManager) -->
+        <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon text-gray-500 hover:text-[#E1306C]" aria-label="Instagram">
+          <span data-svg-icon="icon-instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+            </svg>
+          </span>
+        </a>
+        <a href="https://tiktok.com" target="_blank" rel="noopener" class="social-icon text-gray-500 hover:text-gray-900" aria-label="TikTok">
+          <span data-svg-icon="icon-tiktok">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.19 8.19 0 004.79 1.52V6.73a4.85 4.85 0 01-1.02-.04z"/>
+            </svg>
+          </span>
+        </a>
+        <a href="https://youtube.com" target="_blank" rel="noopener" class="social-icon text-gray-500 hover:text-[#FF0000]" aria-label="YouTube">
+          <span data-svg-icon="icon-youtube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.5 6.19a3 3 0 00-2.11-2.12C19.56 3.5 12 3.5 12 3.5s-7.56 0-9.39.57A3 3 0 00.5 6.19 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.81 3 3 0 002.11 2.12C4.44 20.5 12 20.5 12 20.5s7.56 0 9.39-.57a3 3 0 002.11-2.12A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.81zM9.75 15.5v-7l6.5 3.5-6.5 3.5z"/>
+            </svg>
+          </span>
+        </a>
+        <button class="btn-brand ml-2 text-sm py-2 px-5" onclick="openBookingModal()">
+          Reserva tu sesión <span>→</span>
+        </button>
+      </div>
+
+      <!-- Mobile hamburger -->
+      <button id="hamburger" class="lg:hidden flex flex-col gap-1.5 p-2" aria-label="Abrir menú">
+        <span class="hamburger-line block w-6 h-0.5 bg-gray-800 rounded transition-all duration-300"></span>
+        <span class="hamburger-line block w-6 h-0.5 bg-gray-800 rounded transition-all duration-300"></span>
+        <span class="hamburger-line block w-4 h-0.5 bg-gray-800 rounded transition-all duration-300"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="fixed inset-0 z-50 flex flex-col bg-white lg:hidden">
+    <div class="flex items-center justify-between px-6 py-5 border-b border-gray-100">
+      <span class="font-extrabold text-xl">Changos<span class="gradient-text">Garden</span></span>
+      <button id="close-menu" class="p-2 text-gray-500" aria-label="Cerrar menú">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <nav class="flex-1 flex flex-col justify-center px-8 gap-6">
+      <a href="#inicio"    class="text-2xl font-bold text-gray-800 hover:text-green-500 transition-colors" onclick="closeMobileMenu()">Inicio</a>
+      <a href="#nosotros"  class="text-2xl font-bold text-gray-800 hover:text-green-500 transition-colors" onclick="closeMobileMenu()">Nosotros</a>
+      <a href="#servicios" class="text-2xl font-bold text-gray-800 hover:text-green-500 transition-colors" onclick="closeMobileMenu()">Servicios</a>
+      <a href="#portfolio" class="text-2xl font-bold text-gray-800 hover:text-green-500 transition-colors" onclick="closeMobileMenu()">Portfolio</a>
+      <a href="#crew"      class="text-2xl font-bold text-gray-800 hover:text-green-500 transition-colors" onclick="closeMobileMenu()">Crew</a>
+      <a href="#tienda"    class="text-2xl font-bold text-gray-800 hover:text-green-500 transition-colors" onclick="closeMobileMenu()">Tienda</a>
+      <a href="#contacto"  class="text-2xl font-bold text-gray-800 hover:text-green-500 transition-colors" onclick="closeMobileMenu()">Contacto</a>
+    </nav>
+    <div class="px-8 pb-10">
+      <button class="btn-brand w-full justify-center text-base" onclick="openBookingModal(); closeMobileMenu()">
+        Reserva tu sesión →
+      </button>
+      <div class="flex items-center gap-6 mt-6">
+        <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon text-gray-400 hover:text-pink-500">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+        </a>
+        <a href="https://tiktok.com" target="_blank" rel="noopener" class="social-icon text-gray-400 hover:text-gray-900">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.19 8.19 0 004.79 1.52V6.73a4.85 4.85 0 01-1.02-.04z"/></svg>
+        </a>
+        <a href="https://youtube.com" target="_blank" rel="noopener" class="social-icon text-gray-400 hover:text-red-500">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3 3 0 00-2.11-2.12C19.56 3.5 12 3.5 12 3.5s-7.56 0-9.39.57A3 3 0 00.5 6.19 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.81 3 3 0 002.11 2.12C4.44 20.5 12 20.5 12 20.5s7.56 0 9.39-.57a3 3 0 002.11-2.12A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.81zM9.75 15.5v-7l6.5 3.5-6.5 3.5z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       HERO
+  ════════════════════════════════════════════════════════════ -->
+  <section id="inicio" class="relative min-h-screen flex items-center hero-bg-fallback overflow-hidden">
+
+    <!-- ╔════════════════════════════════════════════════════════════╗
+         ║  SVG SLOT 1 — BACKGROUND                                  ║
+         ║  ID: #svg-bg-slot                                          ║
+         ║  SVGManager.setBackground(svgString) injects here.        ║
+         ║  When ready: remove hero-bg-fallback from <section>.      ║
+         ╚════════════════════════════════════════════════════════════╝ -->
+    <div id="svg-bg-slot" aria-hidden="true">
+      <!-- CSS gradient fallback (active until SVG background is loaded) -->
+      <div class="absolute top-[-8%] right-[-4%] w-[700px] h-[700px] rounded-full pointer-events-none"
+           style="background:radial-gradient(circle,rgba(168,85,247,0.18),transparent 65%)"></div>
+      <div class="absolute bottom-[-10%] left-[-6%] w-[600px] h-[600px] rounded-full pointer-events-none"
+           style="background:radial-gradient(circle,rgba(34,197,94,0.16),transparent 65%)"></div>
+    </div>
+
+    <!-- Floating music notes (fallback decorations, removed once SVG icons are set) -->
+    <div id="floating-notes" aria-hidden="true" class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+      <span class="absolute top-[18%] left-[7%]  text-4xl opacity-[0.18] text-green-500 float-1 select-none">♪</span>
+      <span class="absolute top-[28%] right-[9%] text-5xl opacity-[0.13] text-purple-400 float-2 select-none">♫</span>
+      <span class="absolute top-[65%] left-[4%]  text-3xl opacity-[0.18] text-green-500 float-3 select-none">♩</span>
+      <span class="absolute bottom-[18%] right-[7%] text-4xl opacity-[0.13] text-purple-400 float-4 select-none">♪</span>
+      <span class="absolute top-[45%] right-[22%] text-2xl opacity-[0.10] text-green-600 float-2 select-none">🎵</span>
+    </div>
+
+    <!-- Mono bailarín — hijo directo del hero para evitar clipping del grid -->
+    <div id="mono-pos" aria-hidden="true">
+      <div id="mono-float">
+        <div id="svg-character-slot">
+          <div id="mono-dancer"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main content grid -->
+    <div class="relative z-10 max-w-6xl mx-auto px-6 py-32 lg:py-0 w-full grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center min-h-screen">
+
+      <!-- Left: Text content -->
+      <div class="order-2 lg:order-1">
+        <div class="flex flex-wrap gap-2 mb-5">
+          <span class="badge-green">📍 Toledo, España</span>
+          <span class="badge-purple">✦ Estudio Músical</span>
+        </div>
+
+        <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-[1.07] mb-6 tracking-tight">
+          Tu proyecto.<br>
+          Tu <span class="gradient-text">sonido.</span>
+        </h1>
+
+        <p class="text-lg text-gray-600 mb-8 max-w-lg leading-relaxed">
+          Estudio de producción músical y audiovisual en Toledo. Llevamos tus ideas del boceto al master — con <strong class="text-gray-800">calidad, creatividad y mucha buena vibra.</strong>
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 mb-10">
+          <button class="btn-brand" onclick="openBookingModal()">
+            Reserva tu sesión <span>→</span>
+          </button>
+          <a href="#portfolio" class="btn-outline">
+            Ver proyectos <span>↓</span>
+          </a>
+        </div>
+
+        <!-- Audio wave decoration -->
+        <div class="flex items-end gap-1.5">
+          <div class="audio-bar"></div>
+          <div class="audio-bar"></div>
+          <div class="audio-bar"></div>
+          <div class="audio-bar"></div>
+          <div class="audio-bar"></div>
+          <div class="audio-bar"></div>
+          <div class="audio-bar"></div>
+          <span class="ml-3 text-xs text-gray-400 font-semibold uppercase tracking-widest self-center">Sonando en Changos Garden</span>
+        </div>
+
+        <!-- ── REPRODUCTOR HERO ── -->
+        <div id="hero-player" class="mt-5 bg-white/90 backdrop-blur-sm rounded-2xl p-4 border border-gray-100 shadow-md max-w-xs">
+          <!-- Info de pista + onda -->
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-9 h-9 rounded-xl gradient-brand flex items-center justify-center flex-shrink-0">
+              <span class="text-white text-base leading-none">♪</span>
+            </div>
+            <div class="flex-1 min-w-0">
+              <p id="player-track-name" class="font-bold text-sm text-gray-900 truncate">Cargando…</p>
+              <p id="player-artist"     class="text-xs text-gray-400 truncate">Changos Garden</p>
+            </div>
+            <div id="player-wave" class="flex items-end gap-0.5 flex-shrink-0" style="height:18px">
+              <div class="audio-bar" style="height:8px;width:3px;animation-play-state:paused"></div>
+              <div class="audio-bar" style="height:13px;width:3px;animation-play-state:paused;animation-delay:0.2s"></div>
+              <div class="audio-bar" style="height:7px;width:3px;animation-play-state:paused;animation-delay:0.4s"></div>
+              <div class="audio-bar" style="height:11px;width:3px;animation-play-state:paused;animation-delay:0.6s"></div>
+            </div>
+          </div>
+          <!-- Barra de progreso -->
+          <div id="player-progress-bar" class="bg-gray-100 rounded-full mb-3 cursor-pointer" style="height:4px">
+            <div id="player-progress" class="h-full rounded-full gradient-brand" style="width:0%"></div>
+          </div>
+          <!-- Controles -->
+          <div class="flex items-center justify-center gap-5">
+            <button onclick="playerPrev()" class="text-gray-400 hover:text-green-500 transition-colors" aria-label="Anterior">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6 8.5 6V6z"/></svg>
+            </button>
+            <button id="player-play-btn" onclick="playerToggle()"
+                    class="w-10 h-10 rounded-full gradient-brand text-white flex items-center justify-center shadow-lg hover:scale-105 transition-transform"
+                    aria-label="Reproducir / Pausar">
+              <svg id="player-icon-play"  width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              <svg id="player-icon-pause" class="hidden" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+            </button>
+            <button onclick="playerNext()" class="text-gray-400 hover:text-green-500 transition-colors" aria-label="Siguiente">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6 18 14.5 12 6 6v12zm8-12v12h2V6h-2z"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: spacer column (character lives outside the grid in #mono-pos) -->
+      <div class="order-1 lg:order-2 hidden lg:block" aria-hidden="true"></div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1.5">
+      <span class="text-[10px] text-gray-400 uppercase tracking-[0.2em] font-semibold">Explorar</span>
+      <svg class="text-gray-300 animate-bounce" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 9l7 7 7-7"/></svg>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       TICKER / MARQUEE
+  ════════════════════════════════════════════════════════════ -->
+  <div class="gradient-brand py-3 overflow-hidden select-none" aria-hidden="true">
+    <div class="flex whitespace-nowrap" style="animation: marqueeScroll 28s linear infinite;">
+      <span class="inline-flex gap-8 mr-8 text-white font-bold text-sm tracking-widest uppercase">
+        <span>Producción Musical</span><span>✦</span>
+        <span>Audiovisual</span><span>✦</span>
+        <span>Toledo</span><span>✦</span>
+        <span>Changos Garden</span><span>✦</span>
+        <span>Buena Vibra</span><span>✦</span>
+        <span>Tu Proyecto</span><span>✦</span>
+      </span>
+      <!-- Duplicated for seamless loop -->
+      <span class="inline-flex gap-8 mr-8 text-white font-bold text-sm tracking-widest uppercase" aria-hidden="true">
+        <span>Producción Musical</span><span>✦</span>
+        <span>Audiovisual</span><span>✦</span>
+        <span>Toledo</span><span>✦</span>
+        <span>Changos Garden</span><span>✦</span>
+        <span>Buena Vibra</span><span>✦</span>
+        <span>Tu Proyecto</span><span>✦</span>
+      </span>
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       SOBRE NOSOTROS
+  ════════════════════════════════════════════════════════════ -->
+  <section id="nosotros" class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+        <!-- Left: Image / decoration area -->
+        <div class="reveal-left order-2 lg:order-1">
+          <div class="relative">
+            <!-- Decorative background blob -->
+            <div class="absolute -inset-4 rounded-3xl opacity-30"
+                 style="background:linear-gradient(135deg,rgba(34,197,94,0.2),rgba(168,85,247,0.2));"></div>
+
+            <!-- Main card -->
+            <div class="relative bg-white rounded-3xl p-8 shadow-xl border border-gray-100">
+              <!-- Stats row -->
+              <div class="grid grid-cols-3 gap-4 mb-8">
+                <div class="text-center">
+                  <div class="text-3xl font-extrabold gradient-text">1</div>
+                  <div class="text-xs text-gray-500 font-semibold uppercase tracking-wide mt-1">Año activos</div>
+                </div>
+                <div class="text-center border-x border-gray-100">
+                  <div class="text-3xl font-extrabold gradient-text">∞</div>
+                  <div class="text-xs text-gray-500 font-semibold uppercase tracking-wide mt-1">Géneros</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-3xl font-extrabold gradient-text">100%</div>
+                  <div class="text-xs text-gray-500 font-semibold uppercase tracking-wide mt-1">Dedicación</div>
+                </div>
+              </div>
+
+              <!-- Values -->
+              <div class="grid grid-cols-2 gap-3">
+                <div class="flex items-center gap-2 bg-green-50 rounded-xl p-3">
+                  <!-- data-svg-icon: will be replaced with sprite icon if available -->
+                  <span data-svg-icon="icon-vibes" class="text-xl">🌿</span>
+                  <span class="text-sm font-semibold text-green-800">Buena Vibra</span>
+                </div>
+                <div class="flex items-center gap-2 bg-purple-50 rounded-xl p-3">
+                  <span data-svg-icon="icon-listen" class="text-xl">👂</span>
+                  <span class="text-sm font-semibold text-purple-800">Escucha</span>
+                </div>
+                <div class="flex items-center gap-2 bg-purple-50 rounded-xl p-3">
+                  <span data-svg-icon="icon-adapt" class="text-xl">🔄</span>
+                  <span class="text-sm font-semibold text-purple-800">Adaptación</span>
+                </div>
+                <div class="flex items-center gap-2 bg-green-50 rounded-xl p-3">
+                  <span data-svg-icon="icon-creative" class="text-xl">✨</span>
+                  <span class="text-sm font-semibold text-green-800">Creatividad</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Text -->
+        <div class="reveal-right order-1 lg:order-2">
+          <p class="badge-purple mb-4 inline-block">Sobre nosotros</p>
+          <div class="section-divider mb-6"></div>
+          <h2 class="text-4xl sm:text-5xl font-extrabold leading-tight mb-6">
+            Somos el estudio<br>que <span class="gradient-text">buscabas</span>
+          </h2>
+          <p class="text-gray-600 text-lg leading-relaxed mb-5">
+            Nacimos en 2025 en el corazón de Toledo con una idea clara: <strong class="text-gray-800">que nadie se quede sin terminar su proyecto</strong> por falta de un espacio donde hacerlo.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-5">
+            Somos un equipo joven, dinámico y sin géneros cerrados. Aquí caben todos los estilos, todas las ideas y toda la energía que traigas. No te encasillaremos, no te impondremos nada — escuchamos, nos adaptamos y co-creamos contigo.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-8">
+            Nuestra meta es que cuando salgas del estudio, te vayas con algo que <strong class="text-gray-800">suene exactamente como lo imaginabas</strong> y con ganas de volver.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <button class="btn-brand" onclick="openBookingModal()">Agenda tu visita →</button>
+            <a href="#servicios" class="btn-outline">Nuestros servicios</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       SERVICIOS
+  ════════════════════════════════════════════════════════════ -->
+  <section id="servicios" class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="text-center mb-16 reveal">
+        <p class="badge-green inline-block mb-4">Lo que hacemos</p>
+        <div class="section-divider mx-auto mb-6"></div>
+        <h2 class="text-4xl sm:text-5xl font-extrabold mb-4">
+          Servicios <span class="gradient-text">musicales</span>
+        </h2>
+        <p class="text-gray-500 max-w-xl mx-auto text-lg">
+          Desde la primera nota hasta el master final. Cubrimos todo tu proceso creativo.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+
+        <!-- Card 1: Producción Musical -->
+        <div class="service-card green bg-white rounded-2xl p-8 reveal card-hover">
+          <!-- ╔════════════════════════════════════════════════╗
+               ║  SVG SLOT 3a — SERVICE ICON: Producción       ║
+               ║  data-svg-icon="icon-production"              ║
+               ╚════════════════════════════════════════════════╝ -->
+          <div class="w-14 h-14 bg-green-50 rounded-2xl flex items-center justify-center mb-6">
+            <span data-svg-icon="icon-production" class="text-3xl">🎛️</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-gray-900">Producción Musical</h3>
+          <p class="text-gray-500 leading-relaxed mb-5">
+            Llevamos tu canción desde la idea inicial hasta un track producido, mezclado y listo para distribuir. Trabajamos todos los géneros con el mismo nivel de dedicación.
+          </p>
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-center gap-2 text-sm text-gray-600">
+              <span class="w-4 h-4 rounded-full gradient-brand flex-shrink-0"></span>Grabación en estudio
+            </li>
+            <li class="flex items-center gap-2 text-sm text-gray-600">
+              <span class="w-4 h-4 rounded-full gradient-brand flex-shrink-0"></span>Producción y arreglos
+            </li>
+            <li class="flex items-center gap-2 text-sm text-gray-600">
+              <span class="w-4 h-4 rounded-full gradient-brand flex-shrink-0"></span>Mezcla profesional
+            </li>
+          </ul>
+          <button class="btn-outline text-sm py-2 px-5" onclick="openBookingModal()">Empezar →</button>
+        </div>
+
+        <!-- Card 2: Audiovisual -->
+        <div class="service-card purple bg-white rounded-2xl p-8 reveal card-hover" style="animation-delay:0.2s">
+          <div class="w-14 h-14 bg-purple-50 rounded-2xl flex items-center justify-center mb-6">
+            <span data-svg-icon="icon-video" class="text-3xl">🎬</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-gray-900">Producción Audiovisual</h3>
+          <p class="text-gray-500 leading-relaxed mb-5">
+            Videoclips, contenido para redes, sesiones grabadas y storytelling visual. Conectamos el sonido con la imagen para amplificar tu proyecto artístico.
+          </p>
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-center gap-2 text-sm text-gray-600">
+              <span class="w-4 h-4 rounded-full gradient-brand-rev flex-shrink-0"></span>Videoclips
+            </li>
+            <li class="flex items-center gap-2 text-sm text-gray-600">
+              <span class="w-4 h-4 rounded-full gradient-brand-rev flex-shrink-0"></span>Contenido para RRSS
+            </li>
+            <li class="flex items-center gap-2 text-sm text-gray-600">
+              <span class="w-4 h-4 rounded-full gradient-brand-rev flex-shrink-0"></span>Sesiones visuales
+            </li>
+          </ul>
+          <button class="btn-outline-purple text-sm py-2 px-5" onclick="openBookingModal()">Empezar →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       PORTFOLIO
+  ════════════════════════════════════════════════════════════ -->
+  <section id="portfolio" class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="text-center mb-12 reveal">
+        <p class="badge-purple inline-block mb-4">Nuestro trabajo</p>
+        <div class="section-divider mx-auto mb-6"></div>
+        <h2 class="text-4xl sm:text-5xl font-extrabold mb-4">
+          Proyectos <span class="gradient-text">finalizados</span>
+        </h2>
+        <p class="text-gray-500 max-w-xl mx-auto">
+          Una muestra de lo que se cuece en Changos Garden.
+        </p>
+      </div>
+
+      <!-- Filter tabs -->
+      <div class="flex flex-wrap justify-center gap-2 mb-10 reveal">
+        <button class="tab-btn active" data-filter="all"         onclick="filterPortfolio('all', this)">Todos</button>
+        <button class="tab-btn"        data-filter="produccion"  onclick="filterPortfolio('produccion', this)">Producción</button>
+        <button class="tab-btn"        data-filter="audiovisual" onclick="filterPortfolio('audiovisual', this)">Audiovisual</button>
+      </div>
+
+      <!-- Portfolio grid -->
+      <div id="portfolio-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Breakbeat Andalu — Dr4m4turg0 -->
+        <div class="portfolio-card bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm" data-category="produccion" data-audio="Dr4m4turg0-BreakbeatAndalu.mp3">
+          <div class="h-40 flex items-center justify-center relative overflow-hidden"
+               style="background:linear-gradient(135deg,#22c55e,#16a34a)">
+            <span class="text-5xl opacity-60">🎸</span>
+            <div class="absolute bottom-3 left-3">
+              <span class="badge-green text-xs">Producción</span>
+            </div>
+          </div>
+          <div class="p-5">
+            <h4 class="font-bold text-gray-900 mb-0.5">Breakbeat Andalu</h4>
+            <p class="text-xs text-purple-500 font-semibold mb-3">Dr4m4turg0</p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-end gap-1 h-6" data-player>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+              </div>
+              <button class="play-btn w-8 h-8 rounded-full gradient-brand flex items-center justify-center text-white text-xs" onclick="togglePlay(this)" aria-label="Reproducir">▶</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hakai — Krono -->
+        <div class="portfolio-card bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm" data-category="produccion" data-audio="Krono-Hakai.mp3">
+          <div class="h-40 flex items-center justify-center relative overflow-hidden"
+               style="background:linear-gradient(135deg,#86efac,#22c55e)">
+            <span class="text-5xl opacity-60">🥁</span>
+            <div class="absolute bottom-3 left-3">
+              <span class="badge-green text-xs">Producción</span>
+            </div>
+          </div>
+          <div class="p-5">
+            <h4 class="font-bold text-gray-900 mb-0.5">Hakai</h4>
+            <p class="text-xs text-purple-500 font-semibold mb-3">Krono</p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-end gap-1 h-6" data-player>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+              </div>
+              <button class="play-btn w-8 h-8 rounded-full gradient-brand flex items-center justify-center text-white text-xs" onclick="togglePlay(this)" aria-label="Reproducir">▶</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- M4TRIX — Dr4m4turg0 -->
+        <div class="portfolio-card bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm" data-category="produccion" data-audio="Dr4m4turg0-M4TRIX.mp3">
+          <div class="h-40 flex items-center justify-center relative overflow-hidden"
+               style="background:linear-gradient(135deg,#c084fc,#a855f7)">
+            <span class="text-5xl opacity-60">🎹</span>
+            <div class="absolute bottom-3 left-3">
+              <span class="badge-purple text-xs">Producción</span>
+            </div>
+          </div>
+          <div class="p-5">
+            <h4 class="font-bold text-gray-900 mb-0.5">M4TRIX</h4>
+            <p class="text-xs text-purple-500 font-semibold mb-3">Dr4m4turg0</p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-end gap-1 h-6" data-player>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+              </div>
+              <button class="play-btn w-8 h-8 rounded-full gradient-brand flex items-center justify-center text-white text-xs" onclick="togglePlay(this)" aria-label="Reproducir">▶</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Algo Está Cambiando — SESEW -->
+        <div class="portfolio-card bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm" data-category="produccion" data-audio="SESEW-ALGO-ESTÁ-CAMBIANDO.mp3">
+          <div class="h-40 flex items-center justify-center relative overflow-hidden"
+               style="background:linear-gradient(135deg,#22c55e,#a855f7)">
+            <span class="text-5xl opacity-60">🎤</span>
+            <div class="absolute bottom-3 left-3">
+              <span class="badge-green text-xs">Producción</span>
+            </div>
+          </div>
+          <div class="p-5">
+            <h4 class="font-bold text-gray-900 mb-0.5">Algo Está Cambiando</h4>
+            <p class="text-xs text-purple-500 font-semibold mb-3">SESEW</p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-end gap-1 h-6" data-player>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+              </div>
+              <button class="play-btn w-8 h-8 rounded-full gradient-brand flex items-center justify-center text-white text-xs" onclick="togglePlay(this)" aria-label="Reproducir">▶</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Calabobo — Krono -->
+        <div class="portfolio-card bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm" data-category="produccion" data-audio="Krono-Calabobo.mp3">
+          <div class="h-40 flex items-center justify-center relative overflow-hidden"
+               style="background:linear-gradient(135deg,#4ade80,#16a34a)">
+            <span class="text-5xl opacity-60">🎛️</span>
+            <div class="absolute bottom-3 left-3">
+              <span class="badge-green text-xs">Producción</span>
+            </div>
+          </div>
+          <div class="p-5">
+            <h4 class="font-bold text-gray-900 mb-0.5">Calabobo</h4>
+            <p class="text-xs text-purple-500 font-semibold mb-3">Krono</p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-end gap-1 h-6" data-player>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+              </div>
+              <button class="play-btn w-8 h-8 rounded-full gradient-brand flex items-center justify-center text-white text-xs" onclick="togglePlay(this)" aria-label="Reproducir">▶</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- La Voz de mi Cerebro — SESEW ft. Furius -->
+        <div class="portfolio-card bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm" data-category="produccion" data-audio="SESEW-LA VOZ DE MI CEREBRO FT. FURIUS.mp3">
+          <div class="h-40 flex items-center justify-center relative overflow-hidden"
+               style="background:linear-gradient(135deg,#a855f7,#6d28d9)">
+            <span class="text-5xl opacity-60">🎙️</span>
+            <div class="absolute bottom-3 left-3">
+              <span class="badge-purple text-xs">Producción</span>
+            </div>
+          </div>
+          <div class="p-5">
+            <h4 class="font-bold text-gray-900 mb-0.5">La Voz de mi Cerebro</h4>
+            <p class="text-xs text-purple-500 font-semibold mb-3">SESEW ft. Furius</p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-end gap-1 h-6" data-player>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+              </div>
+              <button class="play-btn w-8 h-8 rounded-full gradient-brand flex items-center justify-center text-white text-xs" onclick="togglePlay(this)" aria-label="Reproducir">▶</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ZOLTRAAK — DR4M4TURG0 -->
+        <div class="portfolio-card bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm" data-category="produccion" data-audio="DR4M4TURG0-ZOLTRAAK.mp3">
+          <div class="h-40 flex items-center justify-center relative overflow-hidden"
+               style="background:linear-gradient(135deg,#1e1b4b,#4c1d95)">
+            <span class="text-5xl opacity-60">⚡</span>
+            <div class="absolute bottom-3 left-3">
+              <span class="badge-purple text-xs">Producción</span>
+            </div>
+          </div>
+          <div class="p-5">
+            <h4 class="font-bold text-gray-900 mb-0.5">ZOLTRAAK</h4>
+            <p class="text-xs text-purple-500 font-semibold mb-3">DR4M4TURG0</p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-end gap-1 h-6" data-player>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+              </div>
+              <button class="play-btn w-8 h-8 rounded-full gradient-brand flex items-center justify-center text-white text-xs" onclick="togglePlay(this)" aria-label="Reproducir">▶</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- C4NN4BI$ — Dr4m4turg0 -->
+        <div class="portfolio-card bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm" data-category="produccion" data-audio="Dr4m4turg0-C4NN4BI$.mp3">
+          <div class="h-40 flex items-center justify-center relative overflow-hidden"
+               style="background:linear-gradient(135deg,#166534,#15803d)">
+            <span class="text-5xl opacity-60">🌿</span>
+            <div class="absolute bottom-3 left-3">
+              <span class="badge-green text-xs">Producción</span>
+            </div>
+          </div>
+          <div class="p-5">
+            <h4 class="font-bold text-gray-900 mb-0.5">C4NN4BI$</h4>
+            <p class="text-xs text-purple-500 font-semibold mb-3">Dr4m4turg0</p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-end gap-1 h-6" data-player>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+              </div>
+              <button class="play-btn w-8 h-8 rounded-full gradient-brand flex items-center justify-center text-white text-xs" onclick="togglePlay(this)" aria-label="Reproducir">▶</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- LA VIE N NOIR — KAILAS -->
+        <div class="portfolio-card bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm" data-category="produccion" data-audio="KAILAS -LA_VIE_N_NOIR .mp3">
+          <div class="h-40 flex items-center justify-center relative overflow-hidden"
+               style="background:linear-gradient(135deg,#111827,#374151)">
+            <span class="text-5xl opacity-60">🎶</span>
+            <div class="absolute bottom-3 left-3">
+              <span class="badge-purple text-xs">Producción</span>
+            </div>
+          </div>
+          <div class="p-5">
+            <h4 class="font-bold text-gray-900 mb-0.5">LA VIE N NOIR</h4>
+            <p class="text-xs text-purple-500 font-semibold mb-3">KAILAS</p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-end gap-1 h-6" data-player>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+                <div class="audio-bar" style="animation-play-state:paused"></div>
+              </div>
+              <button class="play-btn w-8 h-8 rounded-full gradient-brand flex items-center justify-center text-white text-xs" onclick="togglePlay(this)" aria-label="Reproducir">▶</button>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /portfolio-grid -->
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       CREW
+  ════════════════════════════════════════════════════════════ -->
+  <section id="crew" class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="text-center mb-14 reveal">
+        <p class="badge-purple inline-block mb-4">La Crew</p>
+        <div class="section-divider mx-auto mb-6"></div>
+        <h2 class="text-4xl sm:text-5xl font-extrabold mb-4">
+          Las <span class="gradient-text">personas</span> detrás del sonido
+        </h2>
+        <p class="text-gray-500 max-w-xl mx-auto">
+          Diez artistas. Un estudio. Una familia. Haz clic en cualquier carta para conocernos.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5">
+
+        <!-- Krono -->
+        <div class="crew-card group cursor-pointer rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-300 reveal"
+             onclick="openCrewModal('krono')">
+          <div class="h-32 flex items-center justify-center"
+               style="background:linear-gradient(135deg,#22c55e,#16a34a)">
+            <span class="text-5xl group-hover:scale-110 transition-transform duration-300">🎛️</span>
+          </div>
+          <div class="bg-white p-4 text-center">
+            <h3 class="font-bold text-gray-900 text-sm">Krono</h3>
+            <p class="text-xs text-gray-400 mt-0.5">Productor</p>
+          </div>
+        </div>
+
+        <!-- Kailas -->
+        <div class="crew-card group cursor-pointer rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-300 reveal"
+             onclick="openCrewModal('kailas')">
+          <div class="h-32 flex items-center justify-center"
+               style="background:linear-gradient(135deg,#a855f7,#7e22ce)">
+            <span class="text-5xl group-hover:scale-110 transition-transform duration-300">🎶</span>
+          </div>
+          <div class="bg-white p-4 text-center">
+            <h3 class="font-bold text-gray-900 text-sm">Kailas</h3>
+            <p class="text-xs text-gray-400 mt-0.5">Compositor / Artista</p>
+          </div>
+        </div>
+
+        <!-- ADDN -->
+        <div class="crew-card group cursor-pointer rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-300 reveal"
+             onclick="openCrewModal('ADDN')">
+          <div class="h-32 flex items-center justify-center"
+               style="background:linear-gradient(135deg,#22c55e,#a855f7)">
+            <span class="text-5xl group-hover:scale-110 transition-transform duration-300">🎚️</span>
+          </div>
+          <div class="bg-white p-4 text-center">
+            <h3 class="font-bold text-gray-900 text-sm">ADDN</h3>
+            <p class="text-xs text-gray-400 mt-0.5">Ingeniero de Sonido</p>
+          </div>
+        </div>
+
+        <!-- AnisakisSound -->
+        <div class="crew-card group cursor-pointer rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-300 reveal"
+             onclick="openCrewModal('anisakis')">
+          <div class="h-32 flex items-center justify-center"
+               style="background:linear-gradient(135deg,#86efac,#22c55e)">
+            <span class="text-5xl group-hover:scale-110 transition-transform duration-300">🔊</span>
+          </div>
+          <div class="bg-white p-4 text-center">
+            <h3 class="font-bold text-gray-900 text-sm">AnisakisSound</h3>
+            <p class="text-xs text-gray-400 mt-0.5">Productor / DJ</p>
+          </div>
+        </div>
+
+        <!-- Montihouse -->
+        <div class="crew-card group cursor-pointer rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-300 reveal"
+             onclick="openCrewModal('montihouse')">
+          <div class="h-32 flex items-center justify-center"
+               style="background:linear-gradient(135deg,#c084fc,#a855f7)">
+            <span class="text-5xl group-hover:scale-110 transition-transform duration-300">🏠</span>
+          </div>
+          <div class="bg-white p-4 text-center">
+            <h3 class="font-bold text-gray-900 text-sm">Montihouse</h3>
+            <p class="text-xs text-gray-400 mt-0.5">Productor / Diseñador</p>
+          </div>
+        </div>
+
+        <!-- JamakaSound -->
+        <div class="crew-card group cursor-pointer rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-300 reveal"
+             onclick="openCrewModal('jamaka')">
+          <div class="h-32 flex items-center justify-center"
+               style="background:linear-gradient(135deg,#4ade80,#16a34a)">
+            <span class="text-5xl group-hover:scale-110 transition-transform duration-300">🥁</span>
+          </div>
+          <div class="bg-white p-4 text-center">
+            <h3 class="font-bold text-gray-900 text-sm">JamakaSound</h3>
+            <p class="text-xs text-gray-400 mt-0.5">Productor / Beatmaker</p>
+          </div>
+        </div>
+
+        <!-- RaveKid -->
+        <div class="crew-card group cursor-pointer rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-300 reveal"
+             onclick="openCrewModal('ravekid')">
+          <div class="h-32 flex items-center justify-center"
+               style="background:linear-gradient(135deg,#a855f7,#6d28d9)">
+            <span class="text-5xl group-hover:scale-110 transition-transform duration-300">⚡</span>
+          </div>
+          <div class="bg-white p-4 text-center">
+            <h3 class="font-bold text-gray-900 text-sm">RaveKid</h3>
+            <p class="text-xs text-gray-400 mt-0.5">DJ / Productor</p>
+          </div>
+        </div>
+
+        <!-- SeseW -->
+        <div class="crew-card group cursor-pointer rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-300 reveal"
+             onclick="openCrewModal('sesew')">
+          <div class="h-32 flex items-center justify-center"
+               style="background:linear-gradient(135deg,#22c55e,#16a34a)">
+            <span class="text-5xl group-hover:scale-110 transition-transform duration-300">🎤</span>
+          </div>
+          <div class="bg-white p-4 text-center">
+            <h3 class="font-bold text-gray-900 text-sm">SeseW</h3>
+            <p class="text-xs text-gray-400 mt-0.5">Artista / MC</p>
+          </div>
+        </div>
+
+        <!-- Warco$ -->
+        <div class="crew-card group cursor-pointer rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-300 reveal"
+             onclick="openCrewModal('warco')">
+          <div class="h-32 flex items-center justify-center"
+               style="background:linear-gradient(135deg,#fbbf24,#d97706)">
+            <span class="text-5xl group-hover:scale-110 transition-transform duration-300">💫</span>
+          </div>
+          <div class="bg-white p-4 text-center">
+            <h3 class="font-bold text-gray-900 text-sm">Warco$</h3>
+            <p class="text-xs text-gray-400 mt-0.5">Productor / Artista</p>
+          </div>
+        </div>
+
+        <!-- THEPDK -->
+        <div class="crew-card group cursor-pointer rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-300 reveal"
+             onclick="openCrewModal('thepdk')">
+          <div class="h-32 flex items-center justify-center"
+               style="background:linear-gradient(135deg,#86efac,#a855f7)">
+            <span class="text-5xl group-hover:scale-110 transition-transform duration-300">🧠</span>
+          </div>
+          <div class="bg-white p-4 text-center">
+            <h3 class="font-bold text-gray-900 text-sm">THEPDK</h3>
+            <p class="text-xs text-gray-400 mt-0.5">Productor / Compositor</p>
+          </div>
+        </div>
+
+      </div><!-- /crew-grid -->
+    </div>
+  </section>
+
+
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       TIENDA (comentada — descomentar cuando esté lista)
+  ════════════════════════════════════════════════════════════ -->
+  <section id="tienda" class="py-24 bg-gray-50" style="display:none">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="text-center mb-12 reveal">
+        <p class="badge-green inline-block mb-4">Tienda</p>
+        <div class="section-divider mx-auto mb-6"></div>
+        <h2 class="text-4xl sm:text-5xl font-extrabold mb-4">
+          La <span class="gradient-text">tienda</span>
+        </h2>
+        <p class="text-gray-500 max-w-xl mx-auto">
+          Bases exclusivas y merchandising de Changos Garden.
+        </p>
+      </div>
+
+      <!-- Shop tabs -->
+      <div class="flex justify-center gap-3 mb-10 reveal">
+        <button class="tab-btn active" data-shop-tab="bases"   onclick="switchShopTab('bases', this)">🎵 Bases</button>
+        <button class="tab-btn"        data-shop-tab="merch"   onclick="switchShopTab('merch', this)">👕 Merchandising</button>
+      </div>
+
+      <!-- Bases grid -->
+      <div id="shop-bases" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm card-hover reveal">
+          <div class="h-32 gradient-brand flex items-center justify-center">
+            <span class="text-4xl">🎵</span>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between mb-1">
+              <h4 class="font-bold text-gray-900 text-sm">Base Trapeo 001</h4>
+              <span class="text-green-600 font-bold text-sm">€9.99</span>
+            </div>
+            <p class="text-xs text-gray-400 mb-1">140 BPM · Trap / Urbano</p>
+            <div class="flex gap-2 mt-3">
+              <button class="flex-1 text-xs py-1.5 rounded-full border border-green-500 text-green-600 font-semibold hover:bg-green-50 transition-colors">Preview</button>
+              <button class="flex-1 text-xs py-1.5 rounded-full gradient-brand text-white font-semibold">Comprar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm card-hover reveal" style="animation-delay:0.1s">
+          <div class="h-32 gradient-brand-rev flex items-center justify-center">
+            <span class="text-4xl">🎷</span>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between mb-1">
+              <h4 class="font-bold text-gray-900 text-sm">Base Lo-fi 002</h4>
+              <span class="text-green-600 font-bold text-sm">€7.99</span>
+            </div>
+            <p class="text-xs text-gray-400 mb-1">90 BPM · Lo-fi / Chill</p>
+            <div class="flex gap-2 mt-3">
+              <button class="flex-1 text-xs py-1.5 rounded-full border border-green-500 text-green-600 font-semibold hover:bg-green-50 transition-colors">Preview</button>
+              <button class="flex-1 text-xs py-1.5 rounded-full gradient-brand text-white font-semibold">Comprar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm card-hover reveal" style="animation-delay:0.2s">
+          <div class="h-32 flex items-center justify-center" style="background:linear-gradient(135deg,#86efac,#22c55e)">
+            <span class="text-4xl">🎸</span>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between mb-1">
+              <h4 class="font-bold text-gray-900 text-sm">Base Indie 003</h4>
+              <span class="text-green-600 font-bold text-sm">€12.99</span>
+            </div>
+            <p class="text-xs text-gray-400 mb-1">120 BPM · Indie / Rock</p>
+            <div class="flex gap-2 mt-3">
+              <button class="flex-1 text-xs py-1.5 rounded-full border border-green-500 text-green-600 font-semibold hover:bg-green-50 transition-colors">Preview</button>
+              <button class="flex-1 text-xs py-1.5 rounded-full gradient-brand text-white font-semibold">Comprar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm card-hover reveal" style="animation-delay:0.3s">
+          <div class="h-32 flex items-center justify-center" style="background:linear-gradient(135deg,#d8b4fe,#a855f7)">
+            <span class="text-4xl">🎹</span>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between mb-1">
+              <h4 class="font-bold text-gray-900 text-sm">Base Pop 004</h4>
+              <span class="text-green-600 font-bold text-sm">€8.99</span>
+            </div>
+            <p class="text-xs text-gray-400 mb-1">128 BPM · Pop / Electronic</p>
+            <div class="flex gap-2 mt-3">
+              <button class="flex-1 text-xs py-1.5 rounded-full border border-green-500 text-green-600 font-semibold hover:bg-green-50 transition-colors">Preview</button>
+              <button class="flex-1 text-xs py-1.5 rounded-full gradient-brand text-white font-semibold">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Merch grid (hidden initially) -->
+      <div id="shop-merch" class="hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm card-hover reveal">
+          <div class="h-48 bg-gray-100 flex flex-col items-center justify-center gap-2 relative">
+            <span class="text-6xl">👕</span>
+            <span class="text-xs text-gray-400 font-semibold">Vista previa próximamente</span>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between mb-1">
+              <h4 class="font-bold text-gray-900">Camiseta CG</h4>
+              <span class="text-green-600 font-bold">€24.99</span>
+            </div>
+            <p class="text-sm text-gray-400 mb-3">Tallas S/M/L/XL</p>
+            <button class="w-full text-sm py-2 rounded-full gradient-brand text-white font-semibold">Añadir al carrito</button>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm card-hover reveal" style="animation-delay:0.1s">
+          <div class="h-48 bg-gray-100 flex flex-col items-center justify-center gap-2">
+            <span class="text-6xl">🧢</span>
+            <span class="text-xs text-gray-400 font-semibold">Vista previa próximamente</span>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between mb-1">
+              <h4 class="font-bold text-gray-900">Gorra CG</h4>
+              <span class="text-green-600 font-bold">€19.99</span>
+            </div>
+            <p class="text-sm text-gray-400 mb-3">Talla única</p>
+            <button class="w-full text-sm py-2 rounded-full gradient-brand text-white font-semibold">Añadir al carrito</button>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm card-hover reveal" style="animation-delay:0.2s">
+          <div class="h-48 bg-gray-100 flex flex-col items-center justify-center gap-2">
+            <span class="text-6xl">🧥</span>
+            <span class="text-xs text-gray-400 font-semibold">Vista previa próximamente</span>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between mb-1">
+              <h4 class="font-bold text-gray-900">Hoodie CG</h4>
+              <span class="text-green-600 font-bold">€39.99</span>
+            </div>
+            <p class="text-sm text-gray-400 mb-3">Tallas S/M/L/XL</p>
+            <button class="w-full text-sm py-2 rounded-full gradient-brand text-white font-semibold">Añadir al carrito</button>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm card-hover reveal" style="animation-delay:0.3s">
+          <div class="h-48 bg-gray-100 flex flex-col items-center justify-center gap-2">
+            <span class="text-6xl">👜</span>
+            <span class="text-xs text-gray-400 font-semibold">Vista previa próximamente</span>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between mb-1">
+              <h4 class="font-bold text-gray-900">Tote Bag CG</h4>
+              <span class="text-green-600 font-bold">€14.99</span>
+            </div>
+            <p class="text-sm text-gray-400 mb-3">Algodón orgánico</p>
+            <button class="w-full text-sm py-2 rounded-full gradient-brand text-white font-semibold">Añadir al carrito</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       CONTACTO
+  ════════════════════════════════════════════════════════════ -->
+  <section id="contacto" class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="text-center mb-16 reveal">
+        <p class="badge-green inline-block mb-4">Contacto</p>
+        <div class="section-divider mx-auto mb-6"></div>
+        <h2 class="text-4xl sm:text-5xl font-extrabold mb-4">
+          Empieza tu <span class="gradient-text">proyecto</span>
+        </h2>
+        <p class="text-gray-500 max-w-xl mx-auto text-lg">
+          Cuéntanos tu idea — estamos aquí para escucharte y ayudarte a hacerla realidad.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+        <!-- Left: Contact info -->
+        <div class="reveal-left space-y-8">
+          <!-- Address -->
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center flex-shrink-0 text-2xl">
+              📍
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-900 mb-1">Dónde estamos</h4>
+              <p class="text-gray-500">Calle Río Marches 79<br>Toledo, España</p>
+            </div>
+          </div>
+
+          <!-- Email (placeholder) -->
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center flex-shrink-0 text-2xl">
+              ✉️
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-900 mb-1">Escríbenos</h4>
+              <a href="mailto:hola@changosgarden.com" class="text-purple-600 hover:underline font-medium">
+                hola@changosgarden.com
+              </a>
+            </div>
+          </div>
+
+          <!-- Hours -->
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center flex-shrink-0 text-2xl">
+              🕐
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-900 mb-1">Horario</h4>
+              <p class="text-gray-500">Lun – Vie: 10:00 – 21:00<br>Sáb: 11:00 – 19:00</p>
+            </div>
+          </div>
+
+          <!-- Social -->
+          <div>
+            <h4 class="font-bold text-gray-900 mb-4">Síguenos</h4>
+            <div class="flex gap-4">
+              <a href="https://instagram.com" target="_blank" rel="noopener"
+                 class="social-icon w-11 h-11 rounded-xl bg-gradient-to-br from-pink-500 to-orange-500 text-white flex items-center justify-center"
+                 aria-label="Instagram">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+              </a>
+              <a href="https://tiktok.com" target="_blank" rel="noopener"
+                 class="social-icon w-11 h-11 rounded-xl bg-gray-900 text-white flex items-center justify-center"
+                 aria-label="TikTok">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.19 8.19 0 004.79 1.52V6.73a4.85 4.85 0 01-1.02-.04z"/></svg>
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener"
+                 class="social-icon w-11 h-11 rounded-xl bg-red-600 text-white flex items-center justify-center"
+                 aria-label="YouTube">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3 3 0 00-2.11-2.12C19.56 3.5 12 3.5 12 3.5s-7.56 0-9.39.57A3 3 0 00.5 6.19 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.81 3 3 0 002.11 2.12C4.44 20.5 12 20.5 12 20.5s7.56 0 9.39-.57a3 3 0 002.11-2.12A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.81zM9.75 15.5v-7l6.5 3.5-6.5 3.5z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Map placeholder -->
+          <div class="rounded-2xl overflow-hidden border border-gray-100 h-48 bg-gray-100 flex items-center justify-center relative">
+            <div class="text-center">
+              <span class="text-4xl block mb-2">🗺️</span>
+              <p class="text-sm text-gray-400 font-medium">Calle Río Marches 79, Toledo</p>
+              <a href="https://maps.google.com/?q=Calle+Rio+Marches+79+Toledo" target="_blank" rel="noopener"
+                 class="text-xs text-purple-500 hover:underline mt-1 block">Abrir en Google Maps →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Contact form -->
+        <div class="reveal-right">
+          <form id="contact-form" class="space-y-5" onsubmit="submitContactForm(event)">
+            <div>
+              <label class="form-label" for="cf-name">Tu nombre *</label>
+              <input type="text" id="cf-name" name="name" class="form-input" placeholder="¿Cómo te llamas?" required>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label class="form-label" for="cf-email">Email *</label>
+                <input type="email" id="cf-email" name="email" class="form-input" placeholder="tu@email.com" required>
+              </div>
+              <div>
+                <label class="form-label" for="cf-phone">Teléfono</label>
+                <input type="tel" id="cf-phone" name="phone" class="form-input" placeholder="+34 6XX XXX XXX">
+              </div>
+            </div>
+            <div>
+              <label class="form-label" for="cf-service">Servicio de interés</label>
+              <select id="cf-service" name="service" class="form-input">
+                <option value="">Selecciona un servicio…</option>
+                <option value="produccion">Producción Musical</option>
+                <option value="audiovisual">Producción Audiovisual</option>
+                <option value="base">Comprar una base</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            <div>
+              <label class="form-label" for="cf-message">Cuéntanos tu proyecto *</label>
+              <textarea id="cf-message" name="message" rows="4" class="form-input resize-none"
+                        placeholder="¿Qué tienes en mente? Cuéntanos tu idea, género, referencias…" required></textarea>
+            </div>
+            <button type="submit" class="btn-brand w-full justify-center">
+              Enviar mensaje <span>✉️</span>
+            </button>
+            <p class="text-xs text-gray-400 text-center">Te responderemos en menos de 24h 🌿</p>
+          </form>
+
+          <!-- Success message (hidden) -->
+          <div id="form-success" class="hidden text-center py-10">
+            <div class="text-5xl mb-4">🎉</div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">¡Mensaje enviado!</h3>
+            <p class="text-gray-500">Te contactamos pronto. ¡Prepárate para hacer ruido!</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════════════════════ -->
+  <footer class="bg-gray-950 text-white py-16">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+
+        <!-- Brand -->
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-10 h-10 rounded-xl gradient-brand flex items-center justify-center">
+              <span class="text-white font-black text-sm">CG</span>
+            </div>
+            <span class="font-extrabold text-xl">Changos<span class="gradient-text">Garden</span></span>
+          </div>
+          <p class="text-gray-400 leading-relaxed max-w-xs mb-6">
+            Ayudamos a finalizar proyectos artísticos y personales desde Toledo. Sin géneros cerrados, con todo el flow.
+          </p>
+          <div class="flex gap-3">
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"
+               class="social-icon w-9 h-9 rounded-lg bg-white/10 hover:bg-pink-500/80 flex items-center justify-center text-gray-400 hover:text-white transition-colors">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok"
+               class="social-icon w-9 h-9 rounded-lg bg-white/10 hover:bg-gray-600 flex items-center justify-center text-gray-400 hover:text-white transition-colors">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.19 8.19 0 004.79 1.52V6.73a4.85 4.85 0 01-1.02-.04z"/></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"
+               class="social-icon w-9 h-9 rounded-lg bg-white/10 hover:bg-red-600/80 flex items-center justify-center text-gray-400 hover:text-white transition-colors">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3 3 0 00-2.11-2.12C19.56 3.5 12 3.5 12 3.5s-7.56 0-9.39.57A3 3 0 00.5 6.19 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.81 3 3 0 002.11 2.12C4.44 20.5 12 20.5 12 20.5s7.56 0 9.39-.57a3 3 0 002.11-2.12A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.81zM9.75 15.5v-7l6.5 3.5-6.5 3.5z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Nav links -->
+        <div>
+          <h5 class="text-sm font-bold uppercase tracking-widest text-gray-500 mb-5">Navegación</h5>
+          <ul class="space-y-3">
+            <li><a href="#inicio"    class="text-gray-400 hover:text-white transition-colors text-sm">Inicio</a></li>
+            <li><a href="#nosotros"  class="text-gray-400 hover:text-white transition-colors text-sm">Nosotros</a></li>
+            <li><a href="#servicios" class="text-gray-400 hover:text-white transition-colors text-sm">Servicios</a></li>
+            <li><a href="#portfolio" class="text-gray-400 hover:text-white transition-colors text-sm">Portfolio</a></li>
+            <li><a href="#tienda"    class="text-gray-400 hover:text-white transition-colors text-sm">Tienda</a></li>
+            <li><a href="#contacto"  class="text-gray-400 hover:text-white transition-colors text-sm">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- CTA -->
+        <div>
+          <h5 class="text-sm font-bold uppercase tracking-widest text-gray-500 mb-5">¿Empezamos?</h5>
+          <p class="text-gray-400 text-sm mb-5 leading-relaxed">
+            Un proyecto, una sesión, una base. Todo empieza con una conversación.
+          </p>
+          <button class="btn-brand text-sm py-2.5 px-5" onclick="openBookingModal()">
+            Reservar sesión →
+          </button>
+        </div>
+      </div>
+
+      <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-gray-500 text-sm">© 2025 Changos Garden Studios. Todos los derechos reservados.</p>
+        <div class="flex gap-6 text-sm">
+          <a href="#" class="text-gray-500 hover:text-white transition-colors">Política de Privacidad</a>
+          <a href="#" class="text-gray-500 hover:text-white transition-colors">Aviso Legal</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       BOOKING MODAL
+  ════════════════════════════════════════════════════════════ -->
+  <div id="booking-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4"
+       style="background:rgba(0,0,0,0.65);backdrop-filter:blur(5px)">
+    <div class="modal-inner bg-white rounded-3xl w-full max-w-lg max-h-[90vh] overflow-y-auto shadow-2xl">
+
+      <!-- Modal header -->
+      <div class="p-6 border-b border-gray-100 flex items-center justify-between sticky top-0 bg-white rounded-t-3xl z-10">
+        <div>
+          <h3 class="text-xl font-extrabold text-gray-900">Reserva tu sesión</h3>
+          <p class="text-sm text-gray-400 mt-0.5" id="modal-step-label">Paso 1 de 3 — Elige tu servicio</p>
+        </div>
+        <button onclick="closeBookingModal()" class="w-9 h-9 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors" aria-label="Cerrar">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <!-- Step indicators -->
+      <div class="flex items-center gap-2 px-6 pt-5 pb-2">
+        <div class="step-indicator done"    id="step-dot-1">1</div>
+        <div class="flex-1 h-0.5 bg-gray-200 rounded" id="step-line-1"></div>
+        <div class="step-indicator pending" id="step-dot-2">2</div>
+        <div class="flex-1 h-0.5 bg-gray-200 rounded" id="step-line-2"></div>
+        <div class="step-indicator pending" id="step-dot-3">3</div>
+      </div>
+
+      <!-- Step 1: Service selection -->
+      <div id="booking-step-1" class="p-6">
+        <p class="text-sm text-gray-500 mb-5">¿Qué servicio necesitas?</p>
+        <div class="grid grid-cols-2 gap-3">
+          <div class="service-radio-card" data-service="Producción Musical" onclick="selectService(this)">
+            <div class="text-2xl mb-2">🎛️</div>
+            <div class="font-bold text-sm text-gray-800">Producción Musical</div>
+          </div>
+          <div class="service-radio-card" data-service="Producción Audiovisual" onclick="selectService(this)">
+            <div class="text-2xl mb-2">🎬</div>
+            <div class="font-bold text-sm text-gray-800">Audiovisual</div>
+          </div>
+          <div class="service-radio-card" data-service="Consulta General" onclick="selectService(this)">
+            <div class="text-2xl mb-2">💬</div>
+            <div class="font-bold text-sm text-gray-800">Solo consultar</div>
+          </div>
+        </div>
+        <button onclick="bookingNextStep(2)" class="btn-brand w-full justify-center mt-6">
+          Siguiente →
+        </button>
+      </div>
+
+      <!-- Step 2: Date / Time -->
+      <div id="booking-step-2" class="p-6 hidden">
+        <p class="text-sm text-gray-500 mb-5">¿Cuándo quieres venir?</p>
+        <div class="space-y-4">
+          <div>
+            <label class="form-label" for="bk-date">Fecha preferida</label>
+            <input type="date" id="bk-date" class="form-input" min="">
+          </div>
+          <div>
+            <label class="form-label">Hora preferida</label>
+            <div class="grid grid-cols-3 gap-2">
+              <button class="time-slot border-2 border-gray-200 rounded-xl py-2 text-sm font-semibold text-gray-600 hover:border-purple-400 hover:bg-purple-50 transition-all" onclick="selectTime(this)">10:00</button>
+              <button class="time-slot border-2 border-gray-200 rounded-xl py-2 text-sm font-semibold text-gray-600 hover:border-purple-400 hover:bg-purple-50 transition-all" onclick="selectTime(this)">12:00</button>
+              <button class="time-slot border-2 border-gray-200 rounded-xl py-2 text-sm font-semibold text-gray-600 hover:border-purple-400 hover:bg-purple-50 transition-all" onclick="selectTime(this)">14:00</button>
+              <button class="time-slot border-2 border-gray-200 rounded-xl py-2 text-sm font-semibold text-gray-600 hover:border-purple-400 hover:bg-purple-50 transition-all" onclick="selectTime(this)">16:00</button>
+              <button class="time-slot border-2 border-gray-200 rounded-xl py-2 text-sm font-semibold text-gray-600 hover:border-purple-400 hover:bg-purple-50 transition-all" onclick="selectTime(this)">18:00</button>
+              <button class="time-slot border-2 border-gray-200 rounded-xl py-2 text-sm font-semibold text-gray-600 hover:border-purple-400 hover:bg-purple-50 transition-all" onclick="selectTime(this)">20:00</button>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-3 mt-6">
+          <button onclick="bookingNextStep(1)" class="btn-outline flex-1 justify-center text-sm">← Atrás</button>
+          <button onclick="bookingNextStep(3)" class="btn-brand flex-1 justify-center text-sm">Siguiente →</button>
+        </div>
+      </div>
+
+      <!-- Step 3: Personal info -->
+      <div id="booking-step-3" class="p-6 hidden">
+        <p class="text-sm text-gray-500 mb-5">Casi listo — tus datos</p>
+        <div class="space-y-4">
+          <div>
+            <label class="form-label" for="bk-name">Nombre *</label>
+            <input type="text" id="bk-name" class="form-input" placeholder="Tu nombre artístico o real" required>
+          </div>
+          <div>
+            <label class="form-label" for="bk-email">Email *</label>
+            <input type="email" id="bk-email" class="form-input" placeholder="tu@email.com" required>
+          </div>
+          <div>
+            <label class="form-label" for="bk-phone">Teléfono</label>
+            <input type="tel" id="bk-phone" class="form-input" placeholder="+34 6XX XXX XXX">
+          </div>
+          <div>
+            <label class="form-label" for="bk-notes">Cuéntanos brevemente tu proyecto</label>
+            <textarea id="bk-notes" rows="3" class="form-input resize-none" placeholder="Género, referencias, qué quieres conseguir…"></textarea>
+          </div>
+        </div>
+        <div class="flex gap-3 mt-6">
+          <button onclick="bookingNextStep(2)" class="btn-outline flex-1 justify-center text-sm">← Atrás</button>
+          <button onclick="submitBooking()" class="btn-brand flex-1 justify-center text-sm">Confirmar reserva ✓</button>
+        </div>
+      </div>
+
+      <!-- Confirmation -->
+      <div id="booking-confirm" class="p-10 hidden text-center">
+        <div class="text-6xl mb-4 animate-bounce">🎉</div>
+        <h3 class="text-2xl font-extrabold text-gray-900 mb-2">¡Sesión solicitada!</h3>
+        <p class="text-gray-500 mb-2">Hemos recibido tu petición.</p>
+        <p class="text-gray-500 mb-8">Nos pondremos en contacto contigo en menos de 24h para confirmar todos los detalles. 🌿</p>
+        <button onclick="closeBookingModal()" class="btn-brand">Cerrar →</button>
+      </div>
+
+    </div>
+  </div><!-- /booking-modal -->
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       SCRIPTS
+  ════════════════════════════════════════════════════════════ -->
+  <script src="js/main.js"></script>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       CREW MEMBER MODAL
+  ════════════════════════════════════════════════════════════ -->
+  <div id="crew-modal"
+       class="fixed inset-0 z-50 hidden items-center justify-center p-4"
+       style="background:rgba(0,0,0,0.65);backdrop-filter:blur(6px)"
+       onclick="handleCrewBackdrop(event)">
+    <div class="bg-white rounded-3xl w-full max-w-sm shadow-2xl overflow-hidden
+                animate-[fadeUp_0.25s_ease-out]">
+
+      <!-- Header con gradiente dinámico -->
+      <div id="crew-modal-header" class="h-40 flex flex-col items-center justify-center relative gap-2">
+        <span id="crew-modal-emoji" class="text-6xl"></span>
+        <button class="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/20 text-white
+                       flex items-center justify-center text-sm font-bold
+                       hover:bg-white/40 transition-colors"
+                onclick="closeCrewModal()" aria-label="Cerrar">✕</button>
+      </div>
+
+      <!-- Contenido -->
+      <div class="p-6">
+        <div class="flex items-start justify-between gap-2 mb-1">
+          <h3 id="crew-modal-name" class="text-2xl font-extrabold text-gray-900 leading-tight"></h3>
+          <span id="crew-modal-badge" class="badge-purple shrink-0 mt-1"></span>
+        </div>
+        <p id="crew-modal-role" class="text-sm font-semibold text-green-600 mb-4"></p>
+        <p id="crew-modal-bio"  class="text-gray-600 text-sm leading-relaxed"></p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

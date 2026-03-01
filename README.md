@@ -38,11 +38,10 @@ El sitio incluye:
 
 | Recurso | URL |
 |---------|-----|
-| 🌐 **Página publicada** | [https://[usuario].github.io/ChangosGarden/](https://[usuario].github.io/ChangosGarden/) |
-| 🎨 **Prototipo Figma** | [Ver en Figma] https://www.figma.com/design/gB84ZOrBZkCeLOTSQ2ej2r/Sin-t%C3%ADtulo?node-id=5-17&t=LcuWTt5ggzM0wsQU-1|
-| 📦 **Repositorio** | [github.com/[usuario]/ChangosGarden](https://github.com/[usuario]/ChangosGarden) |
+| 🌐 **Página publicada** | https://ismagarcia115.github.io/|
+| 🎨 **Prototipo Figma** | https://www.figma.com/design/gB84ZOrBZkCeLOTSQ2ej2r/Sin-t%C3%ADtulo?node-id=5-17&t=LcuWTt5ggzM0wsQU-1|
+| 📦 **Repositorio** | https://github.com/IsmaGarcia115/ChangosGarden |
 
-> ⚠️ Sustituye `[usuario]` y `[id]` por los valores reales antes de la entrega.
 
 ---
 
@@ -70,10 +69,10 @@ ChangosGarden/
 │   └── main.js             # Lógica JavaScript modular (9 módulos)
 │
 ├── assets/
-│   ├── copas.jpg           # Fotografía estudio — copas de árbol
-│   ├── espacio.jpg         # Fotografía hero — espacio/cosmos
+│   ├── copas.jpg           # Fotografía  — copas de árbol
+│   ├── espacio.jpg         # Fotografía  — espacio/cosmos
 │   ├── estudio.jpg         # Fotografía estudio interior
-│   ├── huesos.jpg          # Fotografía detalle estudio
+│   ├── huesos.jpg          # Fotografía huesos de alien
 │   ├── lianas.jpg          # Fotografía decoración
 │   ├── troncos.jpg         # Fotografía exterior
 │   ├── monoOriginal.png    # Arte original del mono
@@ -247,9 +246,9 @@ Fotografías de producción propia del estudio Changos Garden Studios.
 |-------|-------|
 | **Ciclo formativo** | Desarrollo de Aplicaciones Web (DAW) — 2.º curso |
 | **Módulo** | Diseño de Interfaces Web (DIW) |
-| **Centro** | IES / FP [nombre del centro] |
-| **Curso** | 2024 – 2025 |
+| **Centro** | IES Azarquiel |
+| **Curso** | 2025 – 2026 |
 
 ---
 
-_Changos Garden Studios © 2025 — Proyecto Intermodular DAW_
+_Changos Garden Studios © 2026 — Proyecto Intermodular DAW_

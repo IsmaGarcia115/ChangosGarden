@@ -38,7 +38,7 @@ El sitio incluye:
 
 | Recurso | URL |
 |---------|-----|
-| 🌐 **Página publicada** | https://ismagarcia115.github.io/|
+| 🌐 **Página publicada** | https://ismagarcia115.github.io/ChangosGarden/|
 | 🎨 **Prototipo Figma** | https://www.figma.com/design/gB84ZOrBZkCeLOTSQ2ej2r/Sin-t%C3%ADtulo?node-id=5-17&t=LcuWTt5ggzM0wsQU-1|
 | 📦 **Repositorio** | https://github.com/IsmaGarcia115/ChangosGarden |
 
@@ -128,7 +128,7 @@ ChangosGarden/
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/[usuario]/ChangosGarden.git
+git clone https://github.com/IsmaGarcia115/ChangosGarden
 
 # 2. Entrar en la carpeta
 cd ChangosGarden

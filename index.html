@@ -243,7 +243,7 @@
       height: 100%;
       display: flex;
       align-items: center;
-      width: min(90vh, 900px);
+      width: min(95vh, 1100px);
       z-index: 2;
       pointer-events: none;
     }
@@ -262,6 +262,11 @@
       width: 100%;
       display: block;
       mix-blend-mode: screen;
+    }
+
+    /* Mono — oculto en móvil */
+    @media (max-width: 1023px) {
+      #mono-pos { display: none; }
     }
 
     /* SLOT 3: Icons — [data-svg-icon]

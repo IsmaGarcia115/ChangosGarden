@@ -1,5 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
-    <defs>
 
         <!-- ═══════════════════════════════════════════════════
          SERVICIOS
@@ -10,7 +9,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 enable-background="new 0 0 128 128" id="Слой_1" version="1.1" viewBox="0 0 128 128" xml:space="preserve"
                 preserveAspectRatio="xMidYMid meet"
-                style="width: 200px; height: 200px; transform-origin: 50% 50%; transform: scaleX(1) scaleY(1) rotate(0deg);">
+                style="width: 100%; height: 100%; transform-origin: 50% 50%; transform: scaleX(1) scaleY(1) rotate(0deg);">
                 <g class="">
                     <g class="">
                         <path
@@ -262,7 +261,7 @@
         <symbol id="icon-video" viewBox="0 0 24 24">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                 id="Layer_1" x="0px" y="0px" viewBox="0 0 140 140"
-                style="width: 200px; height: 200px; transform-origin: 50% 50%; transform: scaleX(1) scaleY(1) rotate(0deg);"
+                style="width: 100%; height: 100%; transform-origin: 50% 50%; transform: scaleX(1) scaleY(1) rotate(0deg);"
                 xml:space="preserve" preserveAspectRatio="xMidYMid meet">
                 <style type="text/css">
                     <![CDATA[
@@ -2278,7 +2277,7 @@
                 inkscape:version="0.48.4 r9939" sodipodi:docname="daisy.svg"
                 inkscape:output_extension="org.inkscape.output.svg.inkscape" version="1.1" viewBox="0 0 30 30"
                 preserveAspectRatio="xMidYMid meet"
-                style="width: 200px; height: 200px; transform-origin: 50% 50%; transform: scaleX(1) scaleY(1) rotate(0deg);">
+                style="width: 100%; height: 100%; transform-origin: 50% 50%; transform: scaleX(1) scaleY(1) rotate(0deg);">
                 <defs id="defs4" />
                 <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0"
                     inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="10.276087" inkscape:cx="15.344828"
@@ -2330,7 +2329,7 @@
 
         <symbol id="icon-listen" viewBox="0 0 24 24">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"
-                style="width: 200px; height: 200px; transform-origin: 50% 50%; transform: scaleX(1) scaleY(1) rotate(0deg);">
+                style="width: 100%; height: 100%; transform-origin: 50% 50%; transform: scaleX(1) scaleY(1) rotate(0deg);">
                 <defs>
                     <style>
                         .e {
@@ -2456,7 +2455,7 @@
 
         <symbol id="icon-adapt" viewBox="0 0 24 24">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet"
-                style="width: 200px; height: 200px; transform-origin: 50% 50%; transform: scaleX(1) scaleY(1) rotate(0deg);">
+                style="width: 100%; height: 100%; transform-origin: 50% 50%; transform: scaleX(1) scaleY(1) rotate(0deg);">
                 <defs>
                     <style>
                         .a,
@@ -2623,7 +2622,7 @@
         <symbol id="icon-creative" viewBox="0 0 24 24">
             <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" id="Layer_1" viewBox="0 0 50 50"
                 preserveAspectRatio="xMidYMid meet"
-                style="width: 200px; height: 200px; transform-origin: 50% 50%; transform: scaleX(1) scaleY(1) rotate(0deg);">
+                style="width: 100%; height: 100%; transform-origin: 50% 50%; transform: scaleX(1) scaleY(1) rotate(0deg);">
                 <defs>
                     <style>
                         .cls-1 {
@@ -2691,5 +2690,4 @@
                 fill="currentColor" />
         </symbol>
 
-    </defs>
 </svg>
